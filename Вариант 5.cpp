@@ -4,7 +4,7 @@
 using namespace std;
 
 
-class symbol // Базовый класс - Символ char[] chars = { 'c', 'a', 't' 
+class symbol // Базовый класс - Символ char[] chars = { 'c', 'a', 't'} 
 {
 private:
 	
