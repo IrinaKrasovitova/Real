@@ -7,7 +7,7 @@ using namespace std;
 
 class circle //  класс - Круг
 {
-public:
+private:
 	double r;
 	
 public:
@@ -19,7 +19,8 @@ public:
 
 	void print() // Метод для печати полей
 	{
-		cout << "\nr=" << 3.14*r*r; // Печатаем значения полей
+		cout << "\nr=" << r; // Печатаем значения полей
+		cout << "\ns=" << 3.14*r*r;
 	}
 };
 
