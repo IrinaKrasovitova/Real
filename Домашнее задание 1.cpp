@@ -1,3 +1,4 @@
+// Пока только берутся ключи, разбираются и ищутся ошибки 
 #include "stdafx.h"
 #include "crypto_worker.h"
 #include <iostream>
