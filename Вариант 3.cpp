@@ -1,24 +1,61 @@
-//то же самое, что и в 1 варианте, только замени середину кода, начиная с int ras4et() на int GetFracNumCount()
+#include "stdafx.h"
+#include <locale.h>
+#include <conio.h>
+#include <iostream>
+
+using namespace std;
 
 class Chislo
 {
-//...
-    int GetFracNumCount()
-    {
-        int numCount = 0;
-        double intPart;
-        double fracPart = modf( x, &intPart );
-        while( fracPart != 0 )
-        {
-            fracPart = modf( fracPart * 10.0, &intPart );
-            numCount++;
-        }
-        return numCount;
-    }
+	double x;
+public:
+	Chislo()
+	{
+		x = 0;
+	}
+	Chislo(double x)
+	{
+		this->x = x;
+	}
+	void CreateChislo(double x)
+	{
+		this->x = x;
+	}
+	int ras4et()
+	{
+		double a = 0, d = x / 10;
+		while (1)
+		{
+			if (d != 0)
+			{
+				a++;
+				d /= 10;
+			}
+			else
+			{
+				a++;
+				break;
+			}
+		}
+		return a;
+	}
+	void print()
+	{
+		cout << "Цифр в целой части числа ";
+		
+		
+	}
 };
+
 void main()
 {
-//...
-    cout << "Количество цифр в дробной части числа: " << p.GetFracNumCount();
-//...
+	setlocale(LC_ALL, "rus");
+	double x, y, n;
+	x = -41.56789;
+	y = modf(x, &n);
+	printf("modf(%lf))=fractional %f and integer : %f", x, y, n);
+
+	
+	_getch();
 }
+
