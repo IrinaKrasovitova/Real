@@ -39,7 +39,8 @@ public:
 		cout << " z=" << z; // Допечатывает поле z
 		cout << "\nv=" << x*y*z;
 
-	};
+	}
+};	
 
 	int main(int argc, char* argv[])
 	{
