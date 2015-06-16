@@ -2,7 +2,7 @@
 #include <iostream>
 using namespace std;
 class point // Базовый класс - "Точка на плоскости"
-{
+{protected:
 	double x, y; // Координаты точки
 public:
 	point(double x, double y) // Конструктор для инициализации полей
