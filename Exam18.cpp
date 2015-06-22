@@ -36,7 +36,7 @@ public:
 		sotrudnik::print(); // Вызов в переопределенном методе метода 
 		// базового класса
 		cout << " nadbavka=" << nadbavka; // Допечатывает поле b
-		cout << " nadbavka=" << (nadbavka + oklad);
+		cout << " zarplata=" << (nadbavka + oklad);
 	}
 };
 
