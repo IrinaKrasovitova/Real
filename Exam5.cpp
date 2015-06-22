@@ -24,7 +24,7 @@ public: Angle(double deg = 0.0) : _angle(deg) {}
 			return transInRad() * 180 / Pi;
 		}
 
-		double sin() const
+		double cos() const
 		{
 			return std::cos(transInRad());
 		}
@@ -43,7 +43,7 @@ int main()
 
 	std::cout << "Угол:\n" << a1.getAngle() << "\n";
 	
-	std::cout << "Вычисляем sin угла:\n" << a1.cos();
+	std::cout << "Вычисляем cos угла:\n" << a1.cos();
 	system("pause");
 	return 0;
 }
