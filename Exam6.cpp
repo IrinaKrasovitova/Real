@@ -18,9 +18,10 @@ public:
 
 	{
 		cout << "\na=" << a;
-		if (a % 2 == 0)
-			cout << "\nChetnoe 1";
-		else cout << "\nNechetnoe 0";
+	
+				if (a % 2 == 0)
+			cout << "\nChetnoe " << ((a % 2) + 1);
+		else cout << "\nNechetnoe " << ((a %2) - 1);
 
 	}
 };
